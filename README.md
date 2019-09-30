@@ -1,2 +1,10 @@
 # Bricks-Destroyer---Arkanoid-game
 one of my first projects in Java! a program created for the exam of "Elements of graphic informatics", developed during the three-year degree (30 cum laude :) )
+
+This project is aimed at the development in Java of a graphic application inspired by the Arkanoid and Breakout arcade games.
+
+#1.1 The game: Arkanoid and Breakout
+In this kind of games the aim is to knock down a brick wall at the top of the screen, at the bottom there is only a small bar that can be moved to the right and left; with this you have to hit a bouncing ball, so that it destroys all the bricks that make up the wall. If the player fails to hit the ball with his own bar, it comes out of the screen and you lose a life, you lose all lives you lose the game; while knocked down all the bricks the player goes to the next level. A score is assigned each time a brick is hit, based on the type of brick, and each time a power-up is awarded (in the case of Arkanoid).
+
+#1.2 The Bricks Destroyer application
+Bricks Destroyer is not a faithful reproduction of the two applications from which it draws inspiration. The objective of the player is to overcome the 30 levels present and totalize the maximum possible score, destroying all the bricks present in the level without losing all lives, on pain of losing the game; to keep in mind the fact that the score obtained is independent of the difficulty of the level: an extremely difficult level can score a not very high score, what counts is the ability in being able to overcome the maximum number of levels possible with the suns lives available. The player interacts only through the Paddle, or the bar with which you have to avoid dropping the ball on the bottom of the screen, for the rest the movement of the ball is governed by the topology with which the bricks are arranged. Every time the ball hits an obstacle it bounces changing direction, with an angle equal to the angle of incidence; while when the ball hits the paddle it bounces according to the angle with which it is hit, the player must have the ability to position the paddle so that when the ball hits it it goes in the desired direction.
