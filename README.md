@@ -1,4 +1,4 @@
-# Bricks-Destroyer---Arkanoid-game
+# Bricks-Destroyer --- Arkanoid game in Java
 one of my first projects in Java! a program created for the exam of "Elements of graphic informatics", developed during the three-year degree (30 cum laude :) )
 
 This project is aimed at the development in Java of a graphic application inspired by the Arkanoid and Breakout arcade games.
@@ -42,7 +42,7 @@ The sound effect of contact with the paddle is started.
 At this point the new direction of the ball is calculated, as follows:
 The point at which the ball hits the paddle is calculated, more precisely the distance to the center of the paddle and the point of contact is calculated, and the data is stored in the variable tmp (note that this value can be positive or negative).
 The new right value of the ball is calculated by multiplying the value in tmp by a coefficient equal to 0.04 (chosen after a series of experimental tests), while the new value of dy is calculated as:
-dy = -√ (v ^ 2- 〖dx〗 ^ 2)
+![paddleLogic](https://github.com/mehdi-belal/Bricks-Destroyer---Arkanoid-game/blob/master/doc/formula.PNG)
 So that firstly along the x the ball follows a direction that is proportional to the point of contact, while along y is proportional to the speed and to the right, but always contrary to the direction of arrival (thanks to the minus sign), so as to guarantee the "rebound".
 
 ![paddleLogic](https://github.com/mehdi-belal/Bricks-Destroyer---Arkanoid-game/blob/master/doc/paddle_logic.PNG)
