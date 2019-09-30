@@ -17,6 +17,9 @@ The Model encapsulates the state of the game, including all the variables that d
 Although from the point of view of a videogame this pattern is not ideal, the main purpose of this subdivision is to create a program that is more orderly and geared towards the logic of object-oriented programming, in fact a structure of this type allows greater possibilities for future updates and added features. In figure 2 the general architecture of the application.
 
 
+![mainArch](https://github.com/mehdi-belal/Bricks-Destroyer---Arkanoid-game/blob/master/doc/structure.PNG)
+
+
 ## Game logic
 As for the movement of the ball it should be clear that if it hits an obstacle such as the walls or a brick, after the collision it bounces off as a mirror, while if it hits the paddle it bounces according to the point of contact, to make the directionality of the ball. To make it clearer what is meant by "directionability" of the ball the part of the code that manages the contact between the ball and Paddle is reported:
 ```java
@@ -41,3 +44,5 @@ The point at which the ball hits the paddle is calculated, more precisely the di
 The new right value of the ball is calculated by multiplying the value in tmp by a coefficient equal to 0.04 (chosen after a series of experimental tests), while the new value of dy is calculated as:
 dy = -√ (v ^ 2- 〖dx〗 ^ 2)
 So that firstly along the x the ball follows a direction that is proportional to the point of contact, while along y is proportional to the speed and to the right, but always contrary to the direction of arrival (thanks to the minus sign), so as to guarantee the "rebound".
+
+![paddleLogic](https://github.com/mehdi-belal/Bricks-Destroyer---Arkanoid-game/blob/master/doc/paddle_logic.PNG)
